@@ -100,8 +100,13 @@
         //Withdraw Button EventHandler
         const withdrawBtn = document.getElementById('addWithdraw');
         withdrawBtn.addEventListener('click', function(){
-console.log('withdraw')
+            const withdrawAmount = document.getElementById('withdrawAmount').value;
+            const withdrawNumber = parseFloat( withdrawAmount);
         })
+
+        function getInputNumer(){
+            
+        }
 
         function updateSpanText(id, depositNumber){
             const current = document.getElementById(id).innerText;
